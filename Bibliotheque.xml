@@ -2,7 +2,7 @@
 <?xml-model href="Bibliotheque.rnc" ?>
 <?xml-stylesheet type="text/xsl" href="Bibliotheque.xsl" ?>
 <bibliotheque xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www-ens.iro.umontreal.ca/hamelfre/Bibliotheque">
+    xmlns="http://www-ens.iro.umontreal.ca/hamelfre-dumontip/Bibliotheque">
     <livre language="fr" auteurs="aaaaab" >
         <titre>Les croisades celtiques - Tome 1 : La lance de fer</titre>
         <annee>2000</annee>
