@@ -1,4 +1,4 @@
-default namespace = "http://www-ens.iro.umontreal.ca/hamelfre/Bibliotheque"
+default namespace = "http://www-ens.iro.umontreal.ca/hamelfre-dumontip/Bibliotheque"
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 start = bibliotheque
