@@ -1,0 +1,46 @@
+default namespace = "http://www-ens.iro.umontreal.ca/hamelfre/Bibliotheque"
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = bibliotheque
+
+bibliotheque = element bibliotheque {
+                    livre* &
+                    auteur* }
+
+livre = element livre {
+    livre-attributs,
+    element titre { text },
+    element annee { xsd:gYear },
+    prix,
+    personnage*,
+    element couverture { xsd:anyURI }?,
+    element film { xsd:anyURI }?,
+    commentaire?
+}
+
+livre-attributs=
+    attribute auteurs { xsd:IDREFS },
+    attribute language { xsd:language }
+
+auteur = element auteur { person }
+
+personnage = element personnage { person }
+
+person = attribute ident { xsd:ID },
+            identifiant,
+            pays?,
+            element photo { xsd:anyURI }?,
+            commentaire?
+
+identifiant = element nom { text } & element prenom { text }
+
+commentaire = element commentaire { text }
+
+prix = element prix { attribute monnaie { monnaieFormat }?, montantFormat }
+pays = element pays { "CA" | "US" | "UK" }
+
+montantFormat = xsd:decimal { minInclusive="0" fractionDigits="2" }
+monnaieFormat = xsd:string { pattern="[A-Z]{3}" }
+
+
+

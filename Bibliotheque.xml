@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Bibliotheque.rnc" ?>
+<?xml-stylesheet type="text/xsl" href="Bibliotheque.xsl" ?>
+<bibliotheque xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www-ens.iro.umontreal.ca/hamelfre/Bibliotheque">
+    <livre language="fr" auteurs="aaaaab" >
+        <titre>Les croisades celtiques - Tome 1 : La lance de fer</titre>
+        <annee>2000</annee>
+        <prix monnaie="EUR">11.00</prix>
+				<couverture>http://www.images-booknode.com/book_cover/621/full/les-croisades-celtiques,-tome-1---la-lance-de-fer-621373.jpg</couverture>
+        <commentaire>Excellent roman racontant</commentaire>
+    </livre>
+    <livre language="en" auteurs="aaaaaa" >
+        <titre>Harry Potter And The Goblet Of Fire</titre>
+        <annee>2002</annee>
+        <prix monnaie="CAD">8.21</prix>
+        <personnage ident="ffffff">
+            <nom>Potter</nom>
+            <prenom>Harry</prenom>
+            <pays>UK</pays>
+        </personnage>
+        <couverture>http://4.belpotter.by/files/2013/06/harrypotter4_bookcover.jpeg</couverture>
+        <film>http://i.jeded.com/i/harry-potter-and-the-goblet-of-fire.11171.jpg</film>
+    </livre>
+    
+    <livre auteurs="aaaaac" language="fr">
+        <titre>Le Seigneur des anneaux Tome 1</titre>
+        <annee>2002</annee>
+		<prix>99.00</prix>
+    </livre>
+    
+    <auteur ident="aaaaaa">
+        <nom>Rowling</nom>
+        <prenom>J. K.</prenom>
+        <pays>UK</pays>
+        <photo>http://www.jkrowling.com/uploads/images/en_GB-timeline-image-whatsnew-1349705788-nugget.png</photo>
+    </auteur>
+    
+    <auteur ident="aaaaab">
+        <nom>Lawhead</nom>
+        <prenom>Stephan R.</prenom>
+        <pays>US</pays>
+        <photo>http://www.stephenlawhead.com/images/stories/author/lawhead.jpg</photo>
+    </auteur>
+    
+    <auteur ident="aaaaac">
+        <nom>Tolkien</nom>
+        <prenom>J. R. R.</prenom>
+        <pays>UK</pays>
+    </auteur>
+</bibliotheque>
+
