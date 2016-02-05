@@ -10,7 +10,8 @@
 				<couverture>http://www.images-booknode.com/book_cover/621/full/les-croisades-celtiques,-tome-1---la-lance-de-fer-621373.jpg</couverture>
         <commentaire>Excellent roman racontant</commentaire>
     </livre>
-    <livre language="en" auteurs="aaaaaa" >
+		
+		<livre language="en" auteurs="aaaaaa" >
         <titre>Harry Potter And The Goblet Of Fire</titre>
         <annee>2002</annee>
         <prix monnaie="CAD">8.21</prix>
@@ -26,9 +27,16 @@
     <livre auteurs="aaaaac" language="fr">
         <titre>Le Seigneur des anneaux Tome 1</titre>
         <annee>2002</annee>
-		<prix>99.00</prix>
+				<prix>99.00</prix>
     </livre>
-    
+
+		<livre language="en"	auteurs="aaaaad aaaaae aaaaaf">
+			<titre>Let It Snow</titre>
+			<annee>2008</annee>
+			<prix>0.00</prix>
+			<couverture>https://d.gr-assets.com/books/1327869911l/3213286.jpg</couverture>
+		</livre>
+
     <auteur ident="aaaaaa">
         <nom>Rowling</nom>
         <prenom>J. K.</prenom>
@@ -48,6 +56,27 @@
         <nom>Tolkien</nom>
         <prenom>J. R. R.</prenom>
         <pays>UK</pays>
-    </auteur>
+		</auteur>
+
+		<auteur ident="aaaaad">
+			<prenom>Maureen</prenom>
+			<nom>Johnson</nom>
+			<pays>US</pays>
+			<photo>https://d.gr-assets.com/authors/1353452301p5/1406384.jpg</photo>
+		</auteur>
+
+		<auteur ident="aaaaae">
+			<nom>Green</nom>
+			<prenom>John</prenom>
+			<pays>US</pays>
+			<photo>https://d.gr-assets.com/authors/1197703391p5/10317.jpg</photo>
+		</auteur>
+
+		<auteur ident="aaaaaf">
+			<nom>Myracle</nom>
+			<prenom>Lauren</prenom>
+			<pays>US</pays>
+			<photo>https://d.gr-assets.com/authors/1224298383p5/157676.jpg</photo>
+		</auteur>
 </bibliotheque>
 
