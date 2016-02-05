@@ -3,7 +3,7 @@
     xmlns:bib="http://www-ens.iro.umontreal.ca/hamelfre-dumontip/Bibliotheque"
     xmlns="http://www.w3.org/1999/xhtml"
     version="2.0">    
-    <xsl:param name="titre" select="Let It Snow"/>
+    <xsl:param name="titre" select="'Let It Snow'"/>
     
     <xsl:output method = "xml" 
         doctype-public = "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -21,8 +21,8 @@
         </html>
     </xsl:template>
     <xsl:template match="bib:bibliotheque">
-        <h1>Bibliotheque (Livre)</h1>
-        <xsl:apply-templates select="bib:livre" />
+			<h1>Bibliotheque (Livre)</h1>
+				<xsl:apply-templates select="bib:livre[contains(bib:titre, $titre)]" />
     </xsl:template>
 		<xsl:template match="bib:livre">
 				<xsl:variable name="auteurs" select="@auteurs" />
