@@ -69,3 +69,4 @@ montantFormat = xsd:decimal { minInclusive="0" fractionDigits="2" }
 monnaieFormat = xsd:string { pattern="[A-Z]{3}" }
 
 
+
