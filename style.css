@@ -8,19 +8,26 @@ body {
 	text-align: center;
 }
 
-li {
-	margin-left: 35%;
-	margin-right: 35%;
+body > ol > li {
+	margin-left: 40%;
+	margin-right: 40%;
+	text-align: left;
 }
 
-hr {
+body > hr {
 	color: black;
 	width: 70%;
 	height: 2px;
 }
 
-p {
+body > p {
 	margin-left: 15%;
 	margin-right: 15%;
 	text-align: justify;
+}
+
+body > ul {
+	margin-left: 40%;
+	margin-right: 40%;
+	text-align: left;
 }
