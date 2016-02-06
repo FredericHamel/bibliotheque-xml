@@ -35,3 +35,17 @@ body > ul {
 span {
 	font-weight: bold;
 }
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: blueviolet;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline; 
+}
