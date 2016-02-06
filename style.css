@@ -1,19 +1,22 @@
 body {
 	background-image: url("http://www.scolibris.fr//fichier/post/accueil/77.jpg");
-	background-size: 140%;
+	background-size: 160%;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 	color: black;
 	text-align: center;
-}
-
-hr {
-	size: 2;
 }
 
 li {
 	margin-left: 35%;
 	margin-right: 35%;
+}
+
+hr {
+	color: black;
+	width: 70%;
+	height: 2px;
 }
 
 p {
