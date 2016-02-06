@@ -1,3 +1,5 @@
 *
-!Bibliotheque.*
+!*.rnc
+!*.xml
+!*.xsl
 !.gitignore
