@@ -8,6 +8,13 @@ hr {
 	size: 2;
 }
 
+li {
+	margin-left: 35%;
+	margin-right: 35%;
+}
 
-
-
+p {
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: justify;
+}
