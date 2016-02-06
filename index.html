@@ -3,14 +3,41 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>
-			Rapport
-		</title>
+		<title>Rapport</title>
+		<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
 		<link href="style.css" type="text/css"/>
 	</head>
 	<body>
 		<h1>Rapport TP1</h1>
+		<ol>
+			<li>
+				<p><a href="#fonctionnement">Fonctionnement Général</a></p>
+			</li>
+			<li>
+				<p><a href="#experience">Expérience</a></p>
+			</li>
+			<li>
+				<p><a href="#filelisting">Liste des fichiers</a></p>
+			</li>
+		</ol>
 		<hr />
+		<h2 id="fonctionnement">Fonctionnement Général</h2>
+		<p></p>
+		<hr />
+		<h2 id="experience">Expérience avec xslt</h2>
+		<p>
+		Le format xslt n'est pas le format le plus simple à la compréhension.
+		Le débogage de xslt n'est vraiment pas facile, car si le XPath est
+		invalide, il n'y a pas de message l'indiquant, la transformationne
+		ne se fait juste pas. En plus, il y le problème avec les espaces de nom,
+		qui, si oubliés, cause un erreur avec le XPath. Dans le commencement, le
+		premier problème était de comprendre comment le <span class="code">xsl:template</span>
+		fonctionne. Finalement, la notion de variables et des a été exploité dans les xslt. Certaines
+		fonctions telles que <span class="code">tokenize</span> et <span class="code">index-of</span>
+		ont été utilisé pour permettre liste les auteurs d'un livre à partir du <span class="code">IDREFS</span>.
+		</p>
+		<hr />
+		<h2 id="filelisting">Liste des fichiers</h2>
 		<ul>
 			<li><a href="TP1.xpr">TP1.xpr</a></li>
 			<li><a href="livres.xhtml">livres.xhtml</a></li>

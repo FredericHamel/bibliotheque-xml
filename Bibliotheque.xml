@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="Bibliotheque.rnc" ?>
-<?xml-stylesheet type="text/xsl" href="Bibliotheque.xsl" ?>
+<!-- <?xml-stylesheet type="text/xsl" href="Auteur.xsl" ?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="Bibliotheque.xsl" ?> -->
 <bibliotheque xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://www-ens.iro.umontreal.ca/hamelfre-dumontip/Bibliotheque">
     <livre language="fr" auteurs="aaaaab" >
