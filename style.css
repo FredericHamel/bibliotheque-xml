@@ -31,3 +31,7 @@ body > ul {
 	margin-right: 40%;
 	text-align: left;
 }
+
+span {
+	font-weight: bold;
+}
