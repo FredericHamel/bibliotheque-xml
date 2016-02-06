@@ -5,7 +5,7 @@
 	<head>
 		<title>Rapport</title>
 		<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
-		<link href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
 	</head>
 	<body>
 		<h1>Rapport TP1</h1>
@@ -22,7 +22,16 @@
 		</ol>
 		<hr />
 		<h2 id="fonctionnement">Fonctionnement Général</h2>
-		<p></p>
+		<p>
+		Pour changer la selection du livre avec le <a href="Bibliotheque.xslt">Bibliotheque.xsl</a>, il faut modifier
+		<span class="code">xsl:param</span> titre. La valeur di paramètre doit juste être contenu dans le titre. Donc il est
+		possible de selectionner un livre sans connaître le titre complet. La raison de ce comportement est l'utilisation
+		de la fonction xslt <span class="code">contains</span>.
+		</p><br/>
+		<p>
+		Dans le cas des auteurs, il y a 2 <span class="code">xsl:param</span>: nom et prénom. Ces paramètres
+		ont un comportement similaire à celui des livres: ils utilise aussi la même fonction.
+		</p>
 		<hr />
 		<h2 id="experience">Expérience avec xslt</h2>
 		<p>
