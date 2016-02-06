@@ -1,6 +1,9 @@
 body {
-	background-color: white;
-	text-color: black;
+	background-image: url("http://www.scolibris.fr//fichier/post/accueil/77.jpg");
+	background-size: 140%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: black;
 	text-align: center;
 }
 
