@@ -12,10 +12,10 @@ livre = element livre {
     element titre { text },
     element annee { xsd:gYear },
     prix,
-    personnage*,
     element couverture { xsd:anyURI }?,
     element film { xsd:anyURI }?,
-    commentaire?
+    commentaire?,
+    personnage*
 }
 
 livre-attributs=
