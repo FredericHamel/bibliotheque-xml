@@ -1,6 +1,6 @@
 body {
 	background-image: url("http://www.scolibris.fr//fichier/post/accueil/77.jpg");
-	background-size: 160%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -8,10 +8,14 @@ body {
 	text-align: center;
 }
 
+body > ul > li > hr {
+	margin-right: 10%;
+}
+
 body > ol > li {
-	margin-left: 40%;
-	margin-right: 40%;
 	text-align: left;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 
 body > hr {
@@ -21,16 +25,17 @@ body > hr {
 }
 
 body > p {
+	text-align: justify;
 	margin-left: 15%;
 	margin-right: 15%;
-	text-align: justify;
-	background-color: white;
+	background-color: rgba(255,255,255,0.75);
 }
 
 body > ul {
-	margin-left: 40%;
-	margin-right: 40%;
+	margin-left: 25%;
+	margin-right: 25%;
 	text-align: left;
+	background-color: white;
 }
 
 span {
@@ -49,8 +54,4 @@ a:visited {
 a:hover {
 	color: red;
 	text-decoration: underline; 
-}
-
-li > img {
-	margin-left: -25%;
 }
