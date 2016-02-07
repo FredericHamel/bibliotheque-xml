@@ -11,6 +11,9 @@
 		<h1>Rapport TP1</h1>
 		<ol>
 			<li>
+				<p><a href="#collaborateur">Membre de l'équipe</a></p>
+			</li>
+			<li>
 				<p><a href="#fonctionnement">Fonctionnement Général</a></p>
 			</li>
 			<li>
@@ -20,6 +23,12 @@
 				<p><a href="#filelisting">Liste des fichiers</a></p>
 			</li>
 		</ol>
+		<hr />
+		<h2 id="collaborateur">Membre de l'équipe</h2>
+		<ul>
+			<li><p>Frédéric Hamel</p></li>
+			<li><p>Patrice Dumontier-Houle</p></li>
+		</ul>
 		<hr />
 		<h2 id="fonctionnement">Fonctionnement Général</h2>
 		<p>
@@ -41,7 +50,7 @@
 		Nous avons choisit une répresentation par liste non ordonnée, puisque qu'il y avait beaucoup de champs qui étaient facultatifs,
 		tels la couverture d'un livre, les personnages, le pays d'origin des auteurs ou des personnages, etc. Nous avons donc décidé que la représentation par liste
 		était plus avantageux étant donnée que les longueur des lignes varie selon le nombre d'éléments(auteurs, personnage, etc.).
-		En plus, la représentation par liste est plus directe dans cette circonstance: il n'y a pas d'alignement entre les differentes
+		En plus, la représentation par liste est plus directe dans cette circonstance: il n'y a pas d'alignement entre les différentes
 		entrées.
 		</p>
 		<hr />
@@ -51,7 +60,7 @@
 		Le débogage de xslt n'est vraiment pas facile, car si le XPath est
 		invalide, il n'y a pas de message l'indiquant, la transformation
 		ne se fait juste pas. En plus, il y le problème avec les espaces de nom,
-		qui, si oubliés, cause un erreur avec le XPath. Dans le commencement, le
+		qui si oubliés, cause un erreur avec le XPath. Dans le commencement, le
 		premier problème était de comprendre comment le <span class="code">xsl:template</span>
 		fonctionne. Finalement, la notion de variables et des a été exploité dans les xslt. Certaines
 		fonctions telles que <span class="code">tokenize</span> et <span class="code">index-of</span>
