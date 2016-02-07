@@ -98,13 +98,17 @@
 			<p>
 				<xsl:value-of select="concat($header, ': ', bib:prenom, ' ', bib:nom)" />
 			</p>
-			<ul>
-				<li>Pays: <xsl:value-of select="bib:pays"/></li>
-				<xsl:apply-templates select="bib:photo" />
-			</ul>
+			<xsl:if test="string-length(concat(bib:pays, bib:photo)) > 0">
+				<ul>
+					<xsl:apply-templates select="bib:pays" />
+					<xsl:apply-templates select="bib:photo" />
+				</ul>
+			</xsl:if>
 		</li>
 	</xsl:template>
-	
+	<xsl:template match="bib:pays">
+		<li><p>Pays: <xsl:value-of select="."/></p></li>
+	</xsl:template>
 	<xsl:template match="bib:photo">
 		<xsl:call-template name="image">
 			<xsl:with-param name="titre">Photo</xsl:with-param>
