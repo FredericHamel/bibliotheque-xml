@@ -8,30 +8,36 @@ body {
 	text-align: center;
 }
 
-body > ul > li > hr {
+body > div > ul > li > hr {
 	margin-right: 10%;
 }
 
-body > ol > li {
+body > div > ol > li {
 	text-align: left;
 	margin-left: 30%;
 	margin-right: 30%;
 }
 
-body > hr {
+body > div > hr {
 	color: black;
 	width: 70%;
 	height: 2px;
 }
 
-body > p {
-	text-align: justify;
-	margin-left: 15%;
-	margin-right: 15%;
+body > div {
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
 	background-color: rgba(255,255,255,0.75);
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
-body > ul {
+body > div > p {
+	text-align: justify;
+}
+
+body > div > ul {
 	margin-left: 25%;
 	margin-right: 25%;
 	text-align: left;
