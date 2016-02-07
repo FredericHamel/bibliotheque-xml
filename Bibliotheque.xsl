@@ -59,8 +59,9 @@
 			<xsl:apply-templates select="bib:film"/>
 			<xsl:apply-templates select="bib:personnage"/>
 			<xsl:apply-templates select="//bib:auteur[index-of($tokenized_auteurs, @ident) > 0]"/>
-			<xsl:apply-templates select="bib:commentaire"/>
-		</ul><hr />
+		</ul>
+		<xsl:apply-templates select="bib:commentaire"/>
+		<hr />
 	</xsl:template>
 
 	<xsl:template match="bib:auteur">
@@ -134,8 +135,6 @@
 	</xsl:template>
 	
 	<xsl:template match="bib:commentaire">
-		<li>
-			<p>Commentaire: <xsl:value-of select="."/></p>
-		</li>
+		<p>Commentaire: <xsl:value-of select="."/></p>
 	</xsl:template>
 </xsl:stylesheet>
