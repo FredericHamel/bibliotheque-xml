@@ -25,21 +25,24 @@
 		<p>
 		Pour changer la sélection du livre, il faut modifier
 		<span class="code">xsl:param</span> titre dans <a href="Bibliotheque.xslt">Bibliotheque.xsl</a>. Pour qu'un livre soit
-	 	sélectionné, le paramètre doit correspondre à une sous chaîne de titre. Donc il est
+	 	sélectionné, le paramètre doit correspondre à une sous-chaîne de titre. Donc il est
 		possible de sélectionner un livre sans connaître le titre complet. La raison de ce comportement est l'utilisation
 		de la fonction xslt <span class="code">contains</span>.
 		</p>
 		<p>
 		Dans le cas des auteurs, il y a 2 <span class="code">xsl:param</span>: nom et prénom. Ces paramètres
 		ont un comportement similaire à celui des livres, puisqu'ils utilisent la même fonction <span class="code">contains</span>. 
-		Pour valider le xml, nous utilisons un format RNG compacte tel que demandé. Les pays utilisent le format ISO3166-2...
+		Pour valider le xml, nous utilisons un format RNG compacte tel que demandé. Les pays utilisent le format ISO3166-2 de 
+		manière exhaustive, puisque la seule autre option que nous avions trouvée était d'ajouter un attribut type au pays représentant
+		le code ISO, ce qui ne convenait pas aux critères d'évaluation, donc nous avons trouvé la liste en xsd, l'avons converti en 
+		format RNG compacte et intégré dans notre fichier.
 		</p>
 		<hr />
 		<h2 id="experience">Expérience avec xslt</h2>
 		<p>
 		Le format xslt n'est pas le format le plus simple à la compréhension.
 		Le débogage de xslt n'est vraiment pas facile, car si le XPath est
-		invalide, il n'y a pas de message l'indiquant, la transformationne
+		invalide, il n'y a pas de message l'indiquant, la transformation
 		ne se fait juste pas. En plus, il y le problème avec les espaces de nom,
 		qui, si oubliés, cause un erreur avec le XPath. Dans le commencement, le
 		premier problème était de comprendre comment le <span class="code">xsl:template</span>
