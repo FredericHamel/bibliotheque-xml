@@ -49,10 +49,15 @@
 	<xsl:template match="bib:auteur">
 		<li>
 			<p><xsl:value-of select="concat(bib:prenom, ' ', bib:nom)" /></p>
+			<xsl:if test="string-length(concat(bib:pays, bib:photom, bib:commentaire)) > 0">
+				<ul>
+					<xsl:apply-templates select="bib:pays" />
+					<xsl:apply-templates select="bib:photo" />
+					<xsl:apply-templates select="bib:commentaire" />
+				</ul>
+			</xsl:if>
+			<hr/>
 		</li>
-		<xsl:apply-templates select="bib:pays" />
-		<xsl:apply-templates select="bib:photo" />
-		<xsl:apply-templates select="bib:commentaire" />
 	</xsl:template>
 
 	<xsl:template match="bib:pays">
