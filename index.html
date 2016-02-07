@@ -23,15 +23,16 @@
 		<hr />
 		<h2 id="fonctionnement">Fonctionnement Général</h2>
 		<p>
-		Pour changer la selection du livre avec le <a href="Bibliotheque.xslt">Bibliotheque.xsl</a>, il faut modifier
-		<span class="code">xsl:param</span> titre. La valeur di paramètre doit juste être contenu dans le titre. Donc il est
-		possible de selectionner un livre sans connaître le titre complet. La raison de ce comportement est l'utilisation
+		Pour changer la sélection du livre, il faut modifier
+		<span class="code">xsl:param</span> titre dans <a href="Bibliotheque.xslt">Bibliotheque.xsl</a>. Pour qu'un livre soit
+	 	sélectionné, le paramètre doit correspondre à une sous chaîne de titre. Donc il est
+		possible de sélectionner un livre sans connaître le titre complet. La raison de ce comportement est l'utilisation
 		de la fonction xslt <span class="code">contains</span>.
-		</p><br/>
+		</p>
 		<p>
 		Dans le cas des auteurs, il y a 2 <span class="code">xsl:param</span>: nom et prénom. Ces paramètres
-		ont un comportement similaire à celui des livres: ils utilisent la même fonction. La validation du fichier
-		xml est effectué par un rnc. 
+		ont un comportement similaire à celui des livres, puisqu'ils utilisent la même fonction <span class="code">contains</span>. 
+		Pour valider le xml, nous utilisons un format RNG compacte tel que demandé. Les pays utilisent le format ISO3166-2...
 		</p>
 		<hr />
 		<h2 id="experience">Expérience avec xslt</h2>
@@ -45,7 +46,7 @@
 		fonctionne. Finalement, la notion de variables et des a été exploité dans les xslt. Certaines
 		fonctions telles que <span class="code">tokenize</span> et <span class="code">index-of</span>
 		ont été utilisé pour permettre liste les auteurs d'un livre à partir du <span class="code">IDREFS</span>.
-		Le format rnc est assez simple à la compréhension, puisqu'il ressemble beaucoup à un grammaire hors contexte.
+		Le format rnc est assez simple à la compréhension, puisqu'il ressemble beaucoup à une grammaire hors contexte.
 		</p>
 		<hr />
 		<h2 id="filelisting">Liste des fichiers</h2>
