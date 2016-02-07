@@ -4,8 +4,7 @@
 	xmlns="http://www.w3.org/1999/xhtml"
 	version="2.0">
 
-	<xsl:param name="prenom" select="'J. K.'" />
-	<xsl:param name="nom" select="'Rowling'" />
+	<xsl:param name="nom" select="''" />
 
 	<xsl:output method = "xml" 
 		doctype-public = "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -16,6 +15,8 @@
 		<html>
 			<head>
 				<title>Auteur(s)</title>
+				<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+				<link rel="stylesheet" type="text/css" href="style.css"/>
 			</head>
 			<body>
 				<xsl:apply-templates />
@@ -30,22 +31,32 @@
 	<xsl:template match="bib:bibliotheque">
 		<h1>Bibliotheque (Auteur)</h1>
 		<ul>
-			<xsl:apply-templates select="bib:auteur[contains(bib:nom, $nom) and contains(bib:prenom, $prenom)]" />
+			<xsl:choose>
+				<xsl:when test="empty($nom)">
+					<xsl:apply-templates select="bib:auteur" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates select="bib:auteur[contains(concat(bib:prenom, ' ', bib:nom), $nom)]" />
+				</xsl:otherwise>
+			</xsl:choose>
 		</ul>
 	</xsl:template>
 
 	<xsl:template match="bib:auteur">
 		<li>
-			<p><xsl:value-of select="bib:prenom" /><xsl:text> </xsl:text> <xsl:value-of select="bib:nom"/></p>
-			<ul>
-				<xsl:apply-templates select="bib:photo" />
-				<xsl:apply-templates select="bib:commentaire" />
-			</ul>
+			<p><xsl:value-of select="concat(bib:prenom, ' ', bib:nom)" /></p>
 		</li>
+		<xsl:apply-templates select="bib:pays" />
+		<xsl:apply-templates select="bib:photo" />
+		<xsl:apply-templates select="bib:commentaire" /><hr/>
 	</xsl:template>
 
+	<xsl:template match="bib:pays">
+		<li><p>Pays: <xsl:value-of select="." /></p></li>
+	</xsl:template>
+	
 	<xsl:template match="bib:commentaire">
-		<li><xsl:value-of select="."/></li>
+		<li><p><xsl:value-of select="."/></p></li>
 	</xsl:template>
 
 	<xsl:template match="bib:photo">
@@ -63,7 +74,6 @@
 					<xsl:value-of select="."/>
 				</xsl:attribute>
 				<xsl:attribute name="width">240</xsl:attribute>
-				<xsl:attribute name="height">320</xsl:attribute>
 				<xsl:attribute name="alt">$titre</xsl:attribute>
 			</img>
 		</li>

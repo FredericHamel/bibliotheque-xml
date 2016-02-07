@@ -12,36 +12,36 @@
         <commentaire>Excellent roman racontant</commentaire>
     </livre>
 		
-		<livre language="en" auteurs="aaaaaa" >
+	<livre language="en" auteurs="aaaaaa" >
         <titre>Harry Potter And The Goblet Of Fire</titre>
         <annee>2002</annee>
         <prix monnaie="CAD">8.21</prix>
-        <personnage ident="ffffff">
-            <nom>Potter</nom>
-            <prenom>Harry</prenom>
-            <pays>UK</pays>
-        </personnage>
         <couverture>http://4.belpotter.by/files/2013/06/harrypotter4_bookcover.jpeg</couverture>
         <film>http://i.jeded.com/i/harry-potter-and-the-goblet-of-fire.11171.jpg</film>
+	    <personnage ident="ffffff">
+	        <nom>Potter</nom>
+	        <prenom>Harry</prenom>
+	        <pays>GB</pays>
+	    </personnage>
     </livre>
     
     <livre auteurs="aaaaac" language="fr">
         <titre>Le Seigneur des anneaux Tome 1</titre>
         <annee>2002</annee>
-				<prix>99.00</prix>
+		<prix>99.00</prix>
     </livre>
 
-		<livre language="en"	auteurs="aaaaad aaaaae aaaaaf">
-			<titre>Let It Snow</titre>
-			<annee>2008</annee>
-			<prix>0.00</prix>
-			<couverture>https://d.gr-assets.com/books/1327869911l/3213286.jpg</couverture>
-		</livre>
+	<livre language="en" auteurs="aaaaad aaaaae aaaaaf">
+		<titre>Let It Snow</titre>
+		<annee>2008</annee>
+		<prix>0.00</prix>
+		<couverture>https://d.gr-assets.com/books/1327869911l/3213286.jpg</couverture>
+	</livre>
 
     <auteur ident="aaaaaa">
         <nom>Rowling</nom>
         <prenom>J. K.</prenom>
-        <pays>UK</pays>
+        <pays>GB</pays>
         <photo>http://www.jkrowling.com/uploads/images/en_GB-timeline-image-whatsnew-1349705788-nugget.png</photo>
         <commentaire>Elle a &#x00E9;crit une excellente s&#x00E9;rie.</commentaire>
     </auteur>
@@ -56,28 +56,27 @@
     <auteur ident="aaaaac">
         <nom>Tolkien</nom>
         <prenom>J. R. R.</prenom>
-        <pays>UK</pays>
-		</auteur>
+	</auteur>
 
-		<auteur ident="aaaaad">
-			<prenom>Maureen</prenom>
-			<nom>Johnson</nom>
-			<pays>US</pays>
-			<photo>https://d.gr-assets.com/authors/1353452301p5/1406384.jpg</photo>
-		</auteur>
+	<auteur ident="aaaaad">
+		<prenom>Maureen</prenom>
+		<nom>Johnson</nom>
+		<pays>US</pays>
+		<photo>https://d.gr-assets.com/authors/1353452301p5/1406384.jpg</photo>
+	</auteur>
 
-		<auteur ident="aaaaae">
-			<nom>Green</nom>
-			<prenom>John</prenom>
-			<pays>US</pays>
-			<photo>https://d.gr-assets.com/authors/1197703391p5/10317.jpg</photo>
-		</auteur>
+	<auteur ident="aaaaae">
+		<nom>Green</nom>
+		<prenom>John</prenom>
+		<pays>US</pays>
+		<photo>https://d.gr-assets.com/authors/1197703391p5/10317.jpg</photo>
+	</auteur>
 
-		<auteur ident="aaaaaf">
-			<nom>Myracle</nom>
-			<prenom>Lauren</prenom>
-			<pays>US</pays>
-			<photo>https://d.gr-assets.com/authors/1224298383p5/157676.jpg</photo>
-		</auteur>
+	<auteur ident="aaaaaf">
+		<nom>Myracle</nom>
+		<prenom>Lauren</prenom>
+		<pays>US</pays>
+		<photo>https://d.gr-assets.com/authors/1224298383p5/157676.jpg</photo>
+	</auteur>
 </bibliotheque>
 
